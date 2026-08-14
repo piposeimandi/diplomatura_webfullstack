@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Turnos</title>
+    <!-- normalize.css , que los estilos se vean igual en todos los navegadores -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- cabecera con el menu -->
+    <header>
+        <div class="contenedor">
+            <a href="#home" class="logo">TurnosYA</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#como-funciona">Cómo funciona</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- seccion 1: home -->
+        <section id="home" class="banner">
+            <div class="contenedor">
+                <h1>Gestioná tus turnos sin filas</h1>
+                <p>Un sistema simple para consultorios, comercios, talleres y municipios.
+                    Creá el turno, llamalo y listo.</p>
+            </div>
+        </section>
+
+        <!-- seccion 2: como funciona -->
+        <section id="como-funciona">
+            <div class="contenedor">
+                <h2>Cómo funciona</h2>
+                <p class="subtitulo">El recorrido es simple: entrás, pedís tu turno y esperás a que te llamen.</p>
+
+                <div class="tarjetas">
+
+                    <div class="tarjeta">
+                        <h3>1. Entrá y pedí tu turno</h3>
+                        <p>Te acercás a mesa de entrada y solicitás el turno para el servicio que necesitás:
+                            un traumatólogo, el taller, la ventanilla, lo que sea.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>2. Te dan tu turno</h3>
+                        <p>En mesa de entrada te asignan un número y te dicen para qué servicio y a qué prestador
+                            corresponde.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>3. Esperá en la sala</h3>
+                        <p>Te sentás en la sala de espera. La pantalla muestra el orden de los llamados y el número
+                            que sigue.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>4. Te llaman</h3>
+                        <p>Cuando llega tu turno, el prestador te llama: escuchás el aviso o ves tu número en la
+                            pantalla de la sala.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>5. Te atienden</h3>
+                        <p>Pasás a la atención con el prestador correspondiente y listo: turno completado.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion 3: servicios -->
+        <section id="servicios">
+            <div class="contenedor">
+                <h2>Servicios</h2>
+                <p class="subtitulo">El sistema se adapta a distintos rubros sin cambiar el código.</p>
+
+                <div class="tarjetas">
+
+                    <div class="tarjeta">
+                        <img src="img/servicios/consultorio-medico.jpg" alt="Consultorio médico">
+                        <h3>Consultorios</h3>
+                        <p>Turnos para médicos, odontólogos y kinesiólogos.</p>
+                        <ul class="configuracion">
+                            <li>Prestadores: especialidades</li>
+                            <li>Atención: consultorios numerados</li>
+                            <li>Espera: turno por especialidad</li>
+                            <li>Llamado: altavoz + pantalla</li>
+                        </ul>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="img/servicios/banco.jpg" alt="Mostrador de atención en un comercio">
+                        <h3>Comercios</h3>
+                        <p>El cliente se saca el turno solo y espera el llamado.</p>
+                        <ul class="configuracion">
+                            <li>Prestadores: atención en mostrador</li>
+                            <li>Atención: mostradores numerados</li>
+                            <li>Espera: turno automático por pantalla</li>
+                            <li>Llamado: altavoz</li>
+                        </ul>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="img/servicios/taller-mecanico.jpg" alt="Taller mecánico">
+                        <h3>Talleres</h3>
+                        <p>El cliente saca turno y el operador va llamando.</p>
+                        <ul class="configuracion">
+                            <li>Prestadores: diagnóstico y entrega</li>
+                            <li>Atención: boxes de trabajo</li>
+                            <li>Espera: turno por mecánico</li>
+                            <li>Llamado: altavoz</li>
+                        </ul>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="img/servicios/municipio.jpg" alt="Municipio">
+                        <h3>Municipios</h3>
+                        <p>Trámites en ventanillas con pantalla pública.</p>
+                        <ul class="configuracion">
+                            <li>Prestadores: trámites y ventanillas</li>
+                            <li>Atención: ventanillas numeradas</li>
+                            <li>Espera: mesa de entrada 1 y 2</li>
+                            <li>Llamado: pantalla pública</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion 3: galeria -->
+        <section id="galeria">
+            <div class="contenedor">
+                <h2>Galería</h2>
+                <p class="subtitulo">Así se ve TurnosYA en cada rubro.</p>
+
+                <div class="galeria">
+
+                    <img src="img/servicios/banco.jpg" alt="Mostrador de atención en un comercio">
+
+                    <img src="img/servicios/consultorio-medico.jpg" alt="Sala de espera de un consultorio médico">
+
+                    <img src="img/servicios/municipio.jpg" alt="Ventanillas de atención en un municipio">
+
+                    <img src="img/servicios/taller-mecanico.jpg" alt="Mecánico atendiendo en un taller">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion 4: novedades -->
+        <section id="novedades">
+            <div class="contenedor">
+                <h2>Novedades</h2>
+                <p class="subtitulo">Las últimas actualizaciones de TurnosYA.</p>
+
+                <div class="tarjetas">
+
+                    <div class="tarjeta">
+                        <h3>TurnosYA 2.0</h3>
+                        <p><small>14/08/2026</small></p>
+                        <p>Se vienen los recordatorios automáticos por WhatsApp: cada persona recibe el aviso de su
+                            turno y nadie se lo pierde más.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Panel para operadores</h3>
+                        <p><small>14/08/2026</small></p>
+                        <p>Nueva pantalla pública de llamados con una vista especial para quien atiende: ve la cola
+                            completa y llama con un clic.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>TurnosYA llega a municipios</h3>
+                        <p><small>14/08/2026</small></p>
+                        <p>Trámites en ventanillas con cola ordenada: ahora los municipios usan TurnosYA para atender
+                            al vecino sin vueltas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion 5: nosotros -->
+        <section id="nosotros">
+            <div class="contenedor">
+                <h2>Nosotros</h2>
+                <p class="subtitulo">Somos un equipo que crea herramientas simples para que atender al público no
+                    sea una odisea. Turnos claros, atención ordenada.</p>
+
+                <div class="tarjetas">
+
+                    <div class="tarjeta">
+                        <h3>Simple</h3>
+                        <p>Sin complicaciones: se entiende a simple vista.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Rápido</h3>
+                        <p>El turno se crea y se llama en segundos.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Para todos los rubros</h3>
+                        <p>Consultorios, comercios, talleres y municipios.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion 6: contacto -->
+        <section id="contacto" class="contacto">
+            <div class="contenedor">
+                <h2>Contacto</h2>
+
+                <div class="columnas">
+
+                    <div class="columna">
+                        <h3>Contacto Rápido</h3>
+                        <form class="formulario" action="#" method="post">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué necesitás..." required></textarea>
+
+                            <button type="submit" class="boton">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="columna">
+                        <h3>Otras vías de comunicación</h3>
+                        <p>También podés contactarte con nosotros usando los siguientes medios:</p>
+
+                        <ul class="contacto-lista">
+                            <li>Teléfono: 85548438548</li>
+                            <li>Email: contacto@turnosya.com</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Skype</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TurnosYA - Sistema genérico de gestión de turnos</p>
+    </footer>
+
+</body>
+
+</html>
